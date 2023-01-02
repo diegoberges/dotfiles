@@ -22,20 +22,3 @@ export LS_COLORS='no=00:fi=00:di=01;34:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40
 
 alias ls='ls -F --color=auto --show-control-chars'
 alias ll='ls -l'
-
-alias dev="cd ~/GitHub"
-#alias dev='cd D:'
-alias clb='git branch --merged | egrep -v "\* develop" | xargs git branch -d'
-
-alias gpull='git pull'
-alias gpush='git push'
-alias gadd='git add .'
-alias gcom='git commit -am'
-
-alias fo='git fetch origin'
-alias md='git merge origin/develop'
-alias cb='git switch -c'
-alias back='git switch -'
-alias sw='git switch'
-
-alias cz=chezmoi
