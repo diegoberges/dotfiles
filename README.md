@@ -43,3 +43,17 @@ Dotfiles manager | [Chezmoi](https://www.chezmoi.io)
 > Pull latest changes from repository
 
 `chezmoi update`
+
+## Windows 
+
+> Installation
+
+`choco install chezmoi`
+
+> On a second machine, initialize chezmoi
+
+`chezmoi init https://github.com/diegoberges/dotfiles.git`
+
+> Apply Changes
+
+`chezmoi apply -v`
