@@ -2,11 +2,12 @@ alias dev='cd D:'
 alias pjs="cd ~/GitHub"
 
 alias gclb='git branch --merged | egrep -v "\* develop" | xargs git branch -d'
+alias gcmr='git merge --quit'
 
-alias gpull='git pull'
-alias gpush='git push'
 alias gadd='git add .'
 alias gcom='git commit -am'
+alias gpush='git push'
+alias gpull='git pull'
 
 alias gfo='git fetch origin'
 alias gmod='git merge origin/develop'
