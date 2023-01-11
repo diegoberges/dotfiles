@@ -1,7 +1,7 @@
 alias dev='cd D:'
 alias pjs="cd ~/GitHub"
 
-alias clb='git branch --merged | egrep -v "\* develop" | xargs git branch -d'
+alias gclb='git branch --merged | egrep -v "\* develop" | xargs git branch -d'
 
 alias gpull='git pull'
 alias gpush='git push'
