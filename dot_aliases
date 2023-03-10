@@ -1,4 +1,4 @@
-alias dev='cd D:'
+alias dev='cd C:\\dev'
 alias pjs="cd ~/GitHub"
 
 alias gclb='git branch --merged | egrep -v "\* develop" | xargs git branch -d'
@@ -8,6 +8,7 @@ alias gadd='git add .'
 alias gcom='git commit -am'
 alias gpush='git push'
 alias gpull='git pull'
+alias gpob='git push -u origin $(git_current_branch)'
 
 alias gfo='git fetch origin'
 alias gmod='git merge origin/develop'
@@ -16,3 +17,7 @@ alias gb='git switch -'
 alias gsw='git switch'
 
 alias cz=chezmoi
+
+git_current_branch() {
+  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'
+}
